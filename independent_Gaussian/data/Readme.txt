@@ -1,0 +1,1 @@
+Input data for the independent Gaussian code. Each VTK file comprises two fields, namely, mean and variance. Mean and variance fields store the average and variance at each point. 
