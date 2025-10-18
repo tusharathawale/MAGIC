@@ -29,3 +29,9 @@ doi: 10.1109/TVCG.2013.208.]
 [T. Athawale, E. Sakhaee and A. Entezari, "Isosurface Visualization of Data with Nonparametric Models for Uncertainty,"
  in IEEE Transactions on Visualization and Computer Graphics, vol. 22, no. 1, pp. 777-786, 31 Jan. 2016,
  doi: 10.1109/TVCG.2015.2467958.] 
+
+The synthetic tangle dataset is provided in each subfolder for running the code and creating sample results. The following paper has details relevant to creating the tangle dataset.
+
+A. Knoll, Y. Hijazi, A. Kensler, M. Schott, C. Hansen, and H. Hagen,
+“Fast ray tracing of arbitrary implicit surfaces with interval and affine
+arithmetic,” Computer Graphics Forum, vol. 28, no. 1, pp. 26–40, 2009.
