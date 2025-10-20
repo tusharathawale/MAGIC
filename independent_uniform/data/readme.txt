@@ -1,1 +1,3 @@
-Input data for correlated Gaussian code. Each VTK file comprises five fields, namely, mean, variance, rhoX, rhoY, and rhoZ. Mean and variance fields store average and variance at each point. rhoX, rhoY, and rhoZ names are somewhat misleading, but they store covariance with neighboring vertices in X, Y, and Z directions, and these fields have one dimension less than dimension of the mean and variance fields.
+Input data for independent uniform code. Each VTK file comprises two fields, namely, mean and width of the uniform distribution.
+
+The "prepare-tangle-data" Jupyter notebook is provided as a sample script to generate the uncertain tangle data for various noise models.
