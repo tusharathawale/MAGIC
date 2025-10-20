@@ -10,10 +10,10 @@
 
 - Link with the boost and eigen libraries. See CmakeLists.txt in source code
 
-- generate the makefile and and create an executable
+- Generate the makefile and and create an executable
 
 - ./crossing-probability-entropy <SyntheticDataSuffix> <FieldName> <Dimx> <Dimy> <Dimz> <num of ensembles> <num of samples> <isovalue> 
 
-For example, "./crossing-probability-entropy data/tangle_correlation_one_ tangle 64 64 64 8 200 27.6"
+For example, "./crossing-probability-entropy data/tangle_correlation_one_ tangle 64 64 64 6 200 27.6"
 
-- visualize the output vtk file in ParaView with the crossing_probability field volume rendered  
+- Visualize the output vtk file in ParaView with the crossing_probability field volume rendered  

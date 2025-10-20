@@ -4,21 +4,23 @@ Title   -  MAGIC: Marching Cubes Isosurface Uncertainty Visualization for Gaussi
 Authors -  Tushar M. Athawale, Kenneth Moreland, David Pugmire, Chris R. Johnson, Paul Rosen, Matthew Norman, Antigoni Georgiadou, and Alireza Entezari
 Date    -  Oct 20, 2025
  
-This code implements the following three previous papers using the Viskores library:
+This code is a courtesty of the following paper:
 
-(1) Z. Wang, T. M. Athawale, K. Moreland, J. Chen, C. R. Johnson, and
+ Z. Wang, T. M. Athawale, K. Moreland, J. Chen, C. R. Johnson, and
  D. Pugmire, “FunMC^2: A Filter for Uncertainty Visualization of
  Marching Cubes on Multi-Core Devices,” in Eurographics Symposium
  on Parallel Graphics and Visualization, R. Bujack, D. Pugmire, and
  G. Reina, Eds. The Eurographics Association, 2023.
  doi: 10.2312/pgv.20231081
  
-(2) T. M. Athawale, S. Sane and C. R. Johnson, "Uncertainty Visualization
+The code utilizes the foundational techniques proposed in the following two papers.
+ 
+(1) T. M. Athawale, S. Sane and C. R. Johnson, "Uncertainty Visualization
  of the Marching Squares and Marching Cubes Topology Cases," in 2021 IEEE
  Visualization Conference (VIS), New Orleans, LA, USA, 2021, pp. 106-110,
  doi: 10.1109/VIS49827.2021.9623267.
  
-(3) K. P¨othkow, B. Weber, and H.-C. Hege, “Probabilistic marching cubes,”
+(2) K. P¨othkow, B. Weber, and H.-C. Hege, “Probabilistic marching cubes,”
  Computer Graphics Forum, vol. 30, no. 3, pp. 931–940, 2011.
  doi: 10.1111/j.1467-8659.2011.01942.x
  
@@ -64,7 +66,7 @@ viskores::cont::DataSet callWorklet(viskores::cont::DataSet& vtkmDataSet, double
     using WorkletType = MVGaussianTemp;
     using DispatcherType = viskores::worklet::DispatcherMapTopology<WorkletType>;
     
-    // Call the crossin probability worklet
+    // Call the crossing probability worklet
     auto resolveType = [&](const auto &concrete)
     {
         DispatcherType dispatcher(MVGaussianTemp{isovalue, numSamples});
